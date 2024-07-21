@@ -1,26 +1,6 @@
-/* Add this to styles.css */
+/* styles.css */
 
-/* Animation for adding to cart */
-@keyframes add-to-cart {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.adding-to-cart {
-    animation: add-to-cart 0.5s ease;
-}
-
-/* Other styles remain the same */
+/* Add this to the existing CSS file */
 
 body {
     font-family: Arial, sans-serif;
@@ -48,6 +28,7 @@ nav {
     padding: 10px;
     cursor: pointer;
     font-size: 16px;
+    margin-left: 10px;
 }
 
 .deals {
@@ -90,9 +71,14 @@ nav {
 }
 
 .deal-item p {
-    background-color: #f0f0f0;
     margin: 0;
     padding: 10px;
+}
+
+.price {
+    background-color: #f0f0f0;
+    color: #4A00E0;
+    font-weight: bold;
 }
 
 .add-to-cart {
@@ -103,4 +89,24 @@ nav {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+/* Animation for adding to cart */
+@keyframes add-to-cart {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.adding-to-cart {
+    animation: add-to-cart 0.5s ease;
 }
